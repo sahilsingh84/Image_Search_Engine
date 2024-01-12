@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    --page-height: 100;
+    width: 100%;
+    /* height: calc(var(--page-height)*1vh); */
+    height: 100%;
+    background-color: #6527BE;
+    background-image: url("back.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 900px; */
+    height: 100%;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.imagePage .upper {
+    margin-top: 150px;
+}
+
+.imagePage .upper input {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #00294cb5;
+    /* #9681EB */
+    color: white;
+    font-size: 17px;
+}
+
+.imagePage .upper input::placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.imagePage .upper input:hover {
+    border: 2px solid #f4f3f6;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 19px;
+    color: white;
+    background-color: #de571e;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #f4f3f6;
+}
+
+.lower {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+}
+
+.imagediv img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+    transition: 0.3s all linear;
+}
+
+img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.btn2 {
+    color: white;
+    padding: 10px;
+    background-color: #de571e;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .imagePage .upper input {
+        width: 300px;
+    }
+    .imagediv {
+        position: relative;
+        gap: 10px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .imagePage .upper input {
+        width: 250px;
+    }
+    .lower {
+        margin-left: 0; /* Remove left margin on lower section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        padding-left:100px;
+
+    }
+    
+}
+.btn:hover{
+   background-color: #ef6705fb;
+}
